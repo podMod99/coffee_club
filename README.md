@@ -7,3 +7,5 @@
 ## Introduction
 
 A fully functional eCommerce application using commerce.js instead of traditional back end solutions like SQL or Mongo. Commerce.js stores information on products and cart items, eliminating the need to build an entire backend.
+
+Stripe is used for payment processing.
