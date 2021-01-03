@@ -1,8 +1,6 @@
 # E-Commerce
 
-### [Live Site](https://commerce-js.netlify.app/)
-
-![eCommerce](https://i.ibb.co/mH9SNNq/Build-an-e-commerce-1.png)
+### [Live Site](https://coffee-club.netlify.app/)
 
 **Note: you can use 4242424242(etc...) at the payment screen as dummy credit card information**
 
