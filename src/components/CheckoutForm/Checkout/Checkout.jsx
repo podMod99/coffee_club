@@ -52,7 +52,8 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
 
     nextStep();
   };
-
+  console.log('Token: ', token);
+  console.log('Order: ', order);
   let Confirmation = () =>
     order.customer ? (
       <>
@@ -78,7 +79,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
     );
 
   if (error) {
-    console.log(cart, onCaptureCheckout, order, error);
+    console.log(cart);
     Confirmation = () => (
       <>
         <Typography variant='h5'>Error: {error}</Typography>
