@@ -50,7 +50,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
 
   const test = (data) => {
     setShippingData(data);
-
+    console.log(data);
     nextStep();
   };
   console.log('Order: ', order);
@@ -80,7 +80,6 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
     );
 
   if (error) {
-    console.log('Order: ', order);
     console.log(cart);
     Confirmation = () => (
       <>
