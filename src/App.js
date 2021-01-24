@@ -66,6 +66,7 @@ const App = () => {
 
       refreshCart();
     } catch (error) {
+      console.log('Error at handleCaptureCheckout - App.js - 55', error);
       setErrorMessage(error.data.error.message);
     }
   };
