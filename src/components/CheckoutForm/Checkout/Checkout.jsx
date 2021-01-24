@@ -78,6 +78,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
     );
 
   if (error) {
+    console.log(error);
     Confirmation = () => (
       <>
         <Typography variant='h5'>Error: {error}</Typography>
