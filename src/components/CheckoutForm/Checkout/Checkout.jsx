@@ -53,6 +53,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
 
     nextStep();
   };
+  console.log('Order: ', order);
 
   let Confirmation = () =>
     order.customer ? (
