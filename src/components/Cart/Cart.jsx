@@ -35,7 +35,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
           </Grid>
         ))}
       </Grid>
-      <div className={classes.cardDetails} gutterBottom>
+      <div className={classes.cardDetails}>
         <Typography variant='h4'>
           Subtotal: {cart.subtotal.formatted_with_symbol}
         </Typography>
