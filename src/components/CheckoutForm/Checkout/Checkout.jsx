@@ -36,7 +36,6 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
           const token = await commerce.checkout.generateToken(cart.id, {
             type: 'cart',
           });
-          console.log('Token: ', token);
 
           setCheckoutToken(token);
         } catch {
@@ -50,10 +49,8 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
 
   const test = (data) => {
     setShippingData(data);
-    console.log(data);
     nextStep();
   };
-  console.log('Order: ', order);
 
   let Confirmation = () =>
     order.customer ? (
@@ -80,7 +77,6 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
     );
 
   if (error) {
-    console.log(cart);
     Confirmation = () => (
       <>
         <Typography variant='h5'>Error: {error}</Typography>
